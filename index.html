@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day3 | Translator | K.Dev</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/85bcb2089a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <ui class="container">
+            <li class="row from">
+                <div class="icons">
+                    <i class="fas fa-volume-up" id="form"></i>
+                    <i class="fa fa-copy" id="form"></i>
+                </div>
+
+                <select></select>
+            </li>
+
+            <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+            <li class="row to"></li>
+            <select></select>
+
+            <div class="icons">
+                <i class="fas fa-volume-ip" id="to"></i>
+                <i class="fa fa-copy" id="to"></i>
+            </div>
+        </ui>
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea spellcheck="false" class="form-text" placeholder="Enter Text"></textarea>
+                <textarea spellcheck="false" class="to-text" readonly disabled placeholder="Translation"></textarea>
+            </div>
+        </div>
+        <button>Translate Text</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
